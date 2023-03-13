@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/images/head2.png">
   
-  <title>鱼鱼好伙伴 | 坎特伯雷小镇</title>
+  <title>好伙伴们 | 坎特伯雷小镇</title>
   <meta name="author" content="Stranger Yuu" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -16,14 +16,14 @@
   
     <meta name="keywords" content="" />
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="鱼鱼好伙伴">
-<meta property="og:url" content="https://strangeryuu.github.io/friends.html">
+  <meta name="description" content="好伙伴们在哪里~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好伙伴们">
+<meta property="og:url" content="https://strangeryuu.github.io/friends/index.html">
 <meta property="og:site_name" content="坎特伯雷小镇">
+<meta property="og:description" content="好伙伴们在哪里~">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://strangeryuu.github.io/images/head2.png">
-<meta property="article:published_time" content="2023-03-13T14:14:03.165Z">
-<meta property="article:modified_time" content="2023-03-13T14:14:03.165Z">
 <meta property="article:author" content="Stranger Yuu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://strangeryuu.github.io/images/head2.png">
@@ -56,6 +56,16 @@
   
   <style>
     
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/kg1.png');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/background2.jpg');
+        }
+      }
     
   </style>
   
@@ -127,45 +137,36 @@
         
 
             <article itemscope itemtype="https://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://strangeryuu.github.io/friends.html">
+    <link itemprop="mainEntityOfPage" href="">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <h2 class="title-h2 text-center" itemprop="name headline">鱼鱼好伙伴</h2>
-            <div itemprop="articleBody"></div>
+            <h2 class="title-h2 text-center" itemprop="name headline">好伙伴们</h2>
+            <div itemprop="articleBody"><div class="linkpage">
+    <ul id="friendsList"></ul>
+</div>
+
+<script type="text/javascript">
+{
+    const flist = [{"name":"可爱鱼鱼","link":"https://space.bilibili.com/165279756","avatar":"../images/tx1.jpg","bio":"超了"}];
+    let friendNodes = '';
+    while (flist.length > 0) {
+        const rndNum = Math.floor(Math.random()*flist.length);
+        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar}" onerror="this.src='/images/avatar.webp';this.onerror=null;"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio}</p></a></li>`;
+        flist.splice(rndNum, 1);
+    }
+    document.getElementById("friendsList").innerHTML = friendNodes;
+}
+</script></div>
         </div>
         <footer class="kratos-entry-footer clearfix">
             <div class="footer-tag clearfix">
                 <div class="pull-date">
-                    <time datetime="2023-03-13T14:14:03.165Z" itemprop="dateModified">最后编辑：2023-03-13</time>
+                    <time datetime="2021-01-18T00:00:00.000Z" itemprop="dateModified">最后编辑：2021-01-18</time>
                 </div>
             </div>
         </footer>
     </div>
     
-    
-        <div id="v-comments" class="post-comments"></div>
-<script>
-    var load_comm = () => {
-        const init = () => {
-            new Valine({
-                el: '#v-comments',
-                appId: 'xUGrE4mGOHjj8tIV0Ip5PqUH-gzGzoHsz',
-                appKey: 'lYKaLQKlxmjX8NcxB8R5jDQo',
-                visitor: true,
-                enableQQ: false,
-                path: '/friends.html'
-            });
-        }
-        if (typeof Valine === 'undefined') {
-            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
-            $.getScript(src, init);
-        } else {
-            init();
-        }
-    };
-</script>
-<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
-
     
 </article>
 
@@ -180,6 +181,8 @@
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
     
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
@@ -220,8 +223,6 @@
     </div>
 </aside>
             
-                    <div class="sticky-area">
-                
                 
 
             
@@ -306,7 +307,7 @@
                         </div>
                         <div>
                             <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
-                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                            
                         </div>
                         <div>
                             
